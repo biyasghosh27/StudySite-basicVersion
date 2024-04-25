@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/style.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+            <h1>Register Account</h1>
+            <video id = "video" width="440" height="280" autoplay></video>
+            <!-- button capture photo -->
+            <button class="btn" onclick="capture()">Capture Photo</button>
+            <!-- and face cam -->
+            <canvas id ="canvas" width="400" height ="280" style="display: none;"></canvas>
+            <div class="input-box">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Roll Number" name="">
+                <i class='bx bxs-user'></i>
+            </div>
+            <button class="btn" onclick="register()">Register</button>
+    </div>
+    <!-- add static folder -->
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
+
+

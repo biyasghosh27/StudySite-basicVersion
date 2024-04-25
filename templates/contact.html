@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navebar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for('static',filename='style/style1.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='style/contact.css')}}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<nav>
+  <div class="container nav_container">
+    <a href="{{ url_for('success') }}"><h4>EduQuest</h4></a><!--"parallax.html"-->
+    <ul class="nav_menu">
+      <li><a href="{{ url_for('success') }}">Home</a></li><!--"parallax.html"-->
+      <li><a href="{{ url_for('about') }}">About</a></li><!--"about.html"-->
+      <li><a href="{{ url_for('contact') }}">Contact</a></li><!--"contact.html"-->
+      <li><a href="{{ url_for('course') }}">Dashboard</a></li><!--"course.html"-->
+    </ul>
+  </div>
+</nav>
+<script src="{{url_for('static',filename='js/nav.js')}}"></script>
+<section class="contact">
+  <div class="container contact_container">
+    <aside class="contact_aside">
+      <div class="aside_image">
+        <img src="{{url_for('static',filename='images/contact.svg')}}">
+      </div>
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or inquiries? We're here to help! Feel free to reach out to us through the following channels:
+      </p>
+      <ul class="contact_details">
+        <li>
+          <i class='bx bx-phone-call' ></i>
+          <h5>+9101234568</h5>
+        </li>
+        <li>
+          <i class='bx bx-envelope' ></i>
+          <h5>support@eduquest.com</h5>
+        </li>
+        <li>
+          <i class='bx bx-map' ></i>
+          <h5>Kolkata, West Bengal</h5>
+        </li>
+      </ul>
+      <ul class="contact_socials">
+        <li><a href="https://facebook.com"><i class='bx bxl-facebook' ></i></a></li>
+        <li><a href="https://instagram.com"><i class='bx bxl-instagram' ></i></a></li>
+        <li><a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a></li>
+        <li><a href="https://linkedin.com"><i class='bx bxl-linkedin' ></i></a></li>
+      </ul>
+    </aside>
+
+    <!-- connecting to a third party site to send email directly to my email -->
+    <form action="https://formspree.io/f/xeqypjek" method="POST" class="contact_form">
+      <div class="form_name">
+        <input type="text" id="first_name" name="first_name" placeholder="Your First Name" required>
+        <input type="text" id="last_name" name="last_name" placeholder="Your Last Name" required>
+      </div>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      <textarea id="message" name="message" rows="7" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>

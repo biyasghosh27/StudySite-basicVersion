@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuest</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style/style1.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='style/course.css')}}">
+</head>
+<body>
+<nav>
+  <div class="container nav_container">
+    <a href="{{ url_for('success') }}"><h4>EduQuest</h4></a><!--"parallax.html"-->
+    <ul class="nav_menu">
+      <li><a href="{{ url_for('success') }}">Home</a></li><!--"parallax.html"-->
+      <li><a href="{{ url_for('about') }}">About</a></li><!--"about.html"-->
+      <li><a href="{{ url_for('contact') }}">Contact</a></li><!--"contact.html"-->
+      <li><a href="{{ url_for('course') }}">Dashboard</a></li><!--"course.html"-->
+    </ul>
+  </div>
+</nav>
+<section class="courses">
+  <h2> Our Courses</h2>
+  <div class="container courses_container">
+    <article class="course">
+      <div class="course_image">
+        <img src="{{url_for('static',filename='images/c1.jpg')}}">
+      </div>
+      <div class="course_info">
+        <h4>Ui/Ux Beginner Friendly Course</h4>
+        <p>
+          This is a UI/UX Design
+          which will help to create the
+          user interface for an app, website,
+          or other interactive media.
+        </p>
+        <a href="https://www.youtube.com/playlist?list=PLVHgQku8Z937XdTS1-Tt8DUhPoaSlL1ZO" class="btn btn-primary">Learn More</a>
+      </div>
+    </article>
+    <article class="course">
+      <div class="course_image">
+        <img src="{{url_for('static',filename='images/c2.jpg')}}">
+      </div>
+      <div class="course_info">
+        <h4>Machine Learning Course</h4>
+        <p>
+          Machine learning (ML) is a branch of artificial intelligence (AI) and computer science that focuses on the using data and algorithms to enable AI to imitate the way that humans learn.
+        </p>
+        <a href="https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe" class="btn btn-primary">Learn More</a>
+      </div>
+    </article>
+    <article class="course">
+      <div class="course_image">
+        <img src="{{url_for('static',filename='images/c3.jpg')}}">
+      </div>
+      <div class="course_info">
+        <h4>Web Development Course</h4>
+        <p>
+          Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser.
+        </p>
+        <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" class="btn btn-primary">Learn More</a>
+      </div>
+    </article>
+    <article class="course">
+      <div class="course_image">
+        <img src="{{url_for('static',filename='images/c4.jpg')}}">
+      </div>
+      <div class="course_info">
+        <h4>Python Training Course</h4>
+        <p>
+          The course teaches you the essential concepts of Python programming,
+          and gives you an in-depth knowledge in data analytics, machine learning,
+          data visualization, web scraping, and natural language processing.
+        </p>
+        <a href="https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0" class="btn btn-primary">Learn More</a>
+      </div>
+    </article>
+    <article class="course">
+      <div class="course_image">
+        <img src="{{url_for('static',filename='images/c5.jpg')}}">
+      </div>
+      <div class="course_info">
+        <h4>Data Structure and Algorithms Course</h4>
+        <p>
+          A data structure is a specialized format for organizing, processing, retrieving and storing data.
+        </p>
+        <a href="https://www.youtube.com/watch?v=AT14lCXuMKI&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" class="btn btn-primary">Learn More</a>
+      </div>
+    </article>
+    <article class="course">
+      <div class="course_image">
+        <img src="{{url_for('static',filename='images/c6.jpg')}}">
+      </div>
+      <div class="course_info">
+        <h4>Artificial Intelligence Course</h4>
+        <p>
+          AI has become a catchall term for applications that perform complex tasks that once required human input, such as communicating with customers online or playing chess.
+        </p>
+        <a href="https://www.youtube.com/watch?v=uB3i-qV6VdM&list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI" class="btn btn-primary">Learn More</a>
+      </div>
+    </article>
+  </div>
+</section>
+<script src="{{url_for('static',filename='js/nav.js')}}"></script>
+</body>
+</html>
